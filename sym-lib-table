@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name C16-Exp-Port)(type Legacy)(uri ${KIPRJMOD}/libs/C16-Exp-Port.lib)(options "")(descr ""))
+  (lib (name void)(type Legacy)(uri ${KIPRJMOD}/libs/void.lib)(options "")(descr ""))
+  (lib (name W65C51S)(type Legacy)(uri ${KIPRJMOD}/libs/W65C51S.lib)(options "")(descr ""))
+  (lib (name lm386-mod-pin7)(type Legacy)(uri ${KIPRJMOD}/libs/lm386-mod-pin7.lib)(options "")(descr ""))
+)
