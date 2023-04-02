@@ -353,11 +353,11 @@ Entry Wire Line
 Entry Wire Line
 	9365 1485 9465 1585
 Text Label 9465 2385 0    50   ~ 0
-a7
+a4
 Text Label 9465 2285 0    50   ~ 0
-a8
+a6
 Text Label 9465 2185 0    50   ~ 0
-a9
+a8
 Text Label 9465 2085 0    50   ~ 0
 a10
 Text Label 9465 1985 0    50   ~ 0
@@ -379,27 +379,23 @@ Entry Wire Line
 Entry Wire Line
 	9365 2385 9465 2485
 Text Label 9465 2585 0    50   ~ 0
-a5
+a0
 Text Label 9465 2485 0    50   ~ 0
-a6
+a2
 Wire Wire Line
-	9965 2685 9465 2685
+	9965 2785 9465 2785
 Entry Wire Line
-	9365 2585 9465 2685
-Text Label 9465 2685 0    50   ~ 0
-a4
+	9365 2685 9465 2785
 Wire Wire Line
 	9965 2885 9465 2885
-Text Label 9465 2885 0    50   ~ 0
+Text Label 9465 2785 0    50   ~ 0
 phi2
 Wire Wire Line
 	11465 2285 10965 2285
 Wire Wire Line
 	11465 2185 10965 2185
-Text Label 11465 2185 2    50   ~ 0
-a2
 Text Label 11465 2285 2    50   ~ 0
-a3
+a1
 Wire Wire Line
 	10965 1585 11465 1585
 Wire Wire Line
@@ -408,49 +404,47 @@ Wire Wire Line
 	10965 1885 11465 1885
 Text Label 11465 1685 2    50   ~ 0
 latch_clear
-Text Label 11465 1885 2    50   ~ 0
+Text Label 9465 2885 0    50   ~ 0
 ~reset
 $Comp
 L Connector:Conn_01x03_Male JP1
 U 1 1 63A6BB80
-P 8915 2785
-F 0 "JP1" H 8888 2717 50  0000 R CNN
-F 1 "JMP_ADDRESS" H 8888 2808 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8915 2785 50  0001 C CNN
-F 3 "~" H 8915 2785 50  0001 C CNN
-	1    8915 2785
+P 8915 2685
+F 0 "JP1" H 8888 2617 50  0000 R CNN
+F 1 "JMP_ADDRESS" H 8888 2708 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8915 2685 50  0001 C CNN
+F 3 "~" H 8915 2685 50  0001 C CNN
+	1    8915 2685
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	9115 2785 9965 2785
+	9115 2585 9225 2585
 Wire Wire Line
-	9115 2685 9225 2685
+	9115 2785 9225 2785
 Wire Wire Line
-	9115 2885 9225 2885
-Wire Wire Line
-	9225 2885 9225 2960
+	9225 2785 9225 2860
 $Comp
 L power:GND #PWR015
 U 1 1 63AF3EDD
-P 9225 2960
-F 0 "#PWR015" H 9225 2710 50  0001 C CNN
-F 1 "GND" H 9230 2787 50  0000 C CNN
-F 2 "" H 9225 2960 50  0001 C CNN
-F 3 "" H 9225 2960 50  0001 C CNN
-	1    9225 2960
+P 9225 2860
+F 0 "#PWR015" H 9225 2610 50  0001 C CNN
+F 1 "GND" H 9230 2687 50  0000 C CNN
+F 2 "" H 9225 2860 50  0001 C CNN
+F 3 "" H 9225 2860 50  0001 C CNN
+	1    9225 2860
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9225 2605 9225 2685
+	9225 2505 9225 2585
 $Comp
 L power:+5V #PWR014
 U 1 1 63B0F986
-P 9225 2605
-F 0 "#PWR014" H 9225 2455 50  0001 C CNN
-F 1 "+5V" H 9240 2778 50  0000 C CNN
-F 2 "" H 9225 2605 50  0001 C CNN
-F 3 "" H 9225 2605 50  0001 C CNN
-	1    9225 2605
+P 9225 2505
+F 0 "#PWR014" H 9225 2355 50  0001 C CNN
+F 1 "+5V" H 9240 2678 50  0000 C CNN
+F 2 "" H 9225 2505 50  0001 C CNN
+F 3 "" H 9225 2505 50  0001 C CNN
+	1    9225 2505
 	1    0    0    -1  
 $EndComp
 Text Label 8865 1485 0    50   ~ 0
@@ -578,9 +572,9 @@ $EndComp
 Wire Wire Line
 	10965 1985 11465 1985
 Text Label 11465 2085 2    50   ~ 0
-a1
+a5
 Text Label 11465 1985 2    50   ~ 0
-a0
+a7
 $Comp
 L Device:R R1
 U 1 1 64A62418
@@ -927,7 +921,7 @@ F 3 "" H 11240 6555 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11040 6655 11040 6755
+	11040 6655 11040 6705
 $Comp
 L power:GND #PWR022
 U 1 1 64B80DD6
@@ -938,17 +932,6 @@ F 2 "" H 11040 6755 50  0001 C CNN
 F 3 "" H 11040 6755 50  0001 C CNN
 	1    11040 6755
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT RV1
-U 1 1 64B82196
-P 9960 6255
-F 0 "RV1" H 9890 6301 50  0000 R CNN
-F 1 "10k" H 9890 6210 50  0000 R CNN
-F 2 "ReVox:Pot_Bourns_3306P" H 9960 6255 50  0001 C CNN
-F 3 "~" H 9960 6255 50  0001 C CNN
-	1    9960 6255
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
@@ -964,13 +947,13 @@ $EndComp
 $Comp
 L Device:C C8
 U 1 1 64BADB70
-P 10295 6710
-F 0 "C8" H 10180 6664 50  0000 R CNN
-F 1 "470p" H 10180 6755 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 10333 6560 50  0001 C CNN
-F 3 "~" H 10295 6710 50  0001 C CNN
-	1    10295 6710
-	-1   0    0    1   
+P 10665 6705
+F 0 "C8" V 10505 6705 50  0000 C CNN
+F 1 "470p" V 10414 6705 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 10703 6555 50  0001 C CNN
+F 3 "~" H 10665 6705 50  0001 C CNN
+	1    10665 6705
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	10740 6455 10295 6455
@@ -1305,19 +1288,15 @@ Wire Wire Line
 Connection ~ 13850 6355
 Wire Wire Line
 	13045 6355 13850 6355
-Wire Wire Line
-	10295 6560 10295 6455
-Wire Wire Line
-	10295 6860 10295 6960
 $Comp
 L power:GND #PWR020
 U 1 1 6524803C
-P 10295 6960
-F 0 "#PWR020" H 10295 6710 50  0001 C CNN
-F 1 "GND" H 10300 6787 50  0000 C CNN
-F 2 "" H 10295 6960 50  0001 C CNN
-F 3 "" H 10295 6960 50  0001 C CNN
-	1    10295 6960
+P 10295 6855
+F 0 "#PWR020" H 10295 6605 50  0001 C CNN
+F 1 "GND" H 10300 6682 50  0000 C CNN
+F 2 "" H 10295 6855 50  0001 C CNN
+F 3 "" H 10295 6855 50  0001 C CNN
+	1    10295 6855
 	-1   0    0    -1  
 $EndComp
 Text Notes 7330 6155 0    50   ~ 0
@@ -1351,7 +1330,7 @@ Wire Wire Line
 Wire Wire Line
 	7605 6785 7490 6785
 Connection ~ 7490 6485
-Text Label 11465 1585 2    50   ~ 0
+Text Label 11465 1785 2    50   ~ 0
 latch_clk
 Wire Wire Line
 	10965 2085 11465 2085
@@ -1359,7 +1338,7 @@ Wire Wire Line
 	1890 3875 1510 3875
 Text Label 1510 3875 0    50   ~ 0
 ext_audio
-Text Label 11465 1785 2    50   ~ 0
+Text Label 11465 1585 2    50   ~ 0
 r_~w
 Wire Wire Line
 	10965 1785 11465 1785
@@ -1412,20 +1391,6 @@ Wire Wire Line
 Connection ~ 12430 6355
 Wire Wire Line
 	12430 6355 12745 6355
-Wire Notes Line
-	10110 6380 10110 7260
-Wire Notes Line
-	10110 7260 10500 7260
-Wire Notes Line
-	10500 7260 10500 6825
-Wire Notes Line
-	10500 6825 10605 6825
-Wire Notes Line
-	10605 6825 10605 6380
-Wire Notes Line
-	10605 6380 10110 6380
-Text Notes 10225 7370 0    50   ~ 0
-TBD!
 $Comp
 L power:+5V #PWR021
 U 1 1 65440B2F
@@ -1700,7 +1665,7 @@ U 1 1 65543CC0
 P 6420 2875
 F 0 "J1" H 6470 4292 50  0000 C CNN
 F 1 "CONN_SIGNALS" H 6470 4201 50  0000 C CNN
-F 2 "ReVox:PinHeader_2x25_P1.27mm_Vertical" H 6420 2875 50  0001 C CNN
+F 2 "" H 6420 2875 50  0001 C CNN
 F 3 "~" H 6420 2875 50  0001 C CNN
 	1    6420 2875
 	1    0    0    -1  
@@ -1889,6 +1854,57 @@ F 3 "~" H 1080 10075 50  0001 C CNN
 	1    1080 10075
 	1    0    0    -1  
 $EndComp
+Text Notes 6205 1175 0    50   ~ 0
+HELPS WITH SCOPING\nAND ROUTING
+Wire Wire Line
+	9115 2685 9280 2685
+Wire Wire Line
+	9280 2685 9280 2630
+Wire Wire Line
+	9280 2630 9465 2630
+Wire Wire Line
+	9465 2630 9465 2685
+Wire Wire Line
+	9465 2685 9965 2685
+Text Label 11465 2185 2    50   ~ 0
+a3
+Text Label 11465 1885 2    50   ~ 0
+a9
+$Comp
+L Device:R_POT RV1
+U 1 1 64B82196
+P 9960 6255
+F 0 "RV1" H 9890 6301 50  0000 R CNN
+F 1 "10k" H 9890 6210 50  0000 R CNN
+F 2 "ReVox:Pot_Bourns_3306P" H 9960 6255 50  0001 C CNN
+F 3 "~" H 9960 6255 50  0001 C CNN
+	1    9960 6255
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10295 6455 10295 6705
+Wire Wire Line
+	10515 6705 10295 6705
+Connection ~ 10295 6705
+Wire Wire Line
+	10295 6705 10295 6855
+Wire Wire Line
+	10815 6705 11040 6705
+Connection ~ 11040 6705
+Wire Wire Line
+	11040 6705 11040 6755
+Wire Notes Line
+	10190 6360 10815 6360
+Wire Notes Line
+	10815 6360 10815 6645
+Wire Notes Line
+	10815 6645 11100 6645
+Wire Notes Line
+	11120 6645 11120 7085
+Wire Notes Line
+	11100 7085 10190 7085
+Wire Notes Line
+	10190 7085 10190 6360
 Wire Bus Line
 	11565 2085 11565 3425
 Wire Bus Line
@@ -1907,6 +1923,6 @@ Wire Bus Line
 	9365 1480 9365 3425
 Wire Bus Line
 	7165 2275 7165 3775
-Text Notes 6205 1175 0    50   ~ 0
-HELPS WITH SCOPING\nAND ROUTING
+Text Notes 10155 7080 2    50   ~ 0
+IMPROVES RF IMMUNITY\nPAY ATTENTION TO ROUTING
 $EndSCHEMATC
