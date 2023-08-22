@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "ReVox"
-Date "2023-08-20"
+Date "2023-08-22"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Based on work by Yeo Kheng Meng"
@@ -249,32 +249,6 @@ Text Label 1615 3675 0    50   ~ 0
 d0
 Text Notes 2310 1055 0    50   ~ 0
 INTERFACE TO C16
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 63505677
-P 1345 1775
-F 0 "#FLG01" H 1345 1850 50  0001 C CNN
-F 1 "PWR_FLAG" V 1345 1902 50  0000 L CNN
-F 2 "" H 1345 1775 50  0001 C CNN
-F 3 "~" H 1345 1775 50  0001 C CNN
-	1    1345 1775
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1345 1775 1685 1775
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 6351F7AE
-P 1445 4075
-F 0 "#FLG02" H 1445 4150 50  0001 C CNN
-F 1 "PWR_FLAG" V 1445 4202 50  0000 L CNN
-F 2 "" H 1445 4075 50  0001 C CNN
-F 3 "~" H 1445 4075 50  0001 C CNN
-	1    1445 4075
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1445 4075 1785 4075
 Text Notes 1435 9020 0    50   ~ 0
 DECOUPLING & POWER
 Text Notes 9410 3715 0    50   ~ 0
@@ -970,19 +944,19 @@ Wire Wire Line
 $Comp
 L power:GND #PWR019
 U 1 1 64BCB190
-P 10675 6605
-F 0 "#PWR019" H 10675 6355 50  0001 C CNN
-F 1 "GND" H 10680 6432 50  0000 C CNN
-F 2 "" H 10675 6605 50  0001 C CNN
-F 3 "" H 10675 6605 50  0001 C CNN
-	1    10675 6605
+P 10360 6605
+F 0 "#PWR019" H 10360 6355 50  0001 C CNN
+F 1 "GND" H 10365 6432 50  0000 C CNN
+F 2 "" H 10360 6605 50  0001 C CNN
+F 3 "" H 10360 6605 50  0001 C CNN
+	1    10360 6605
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10675 6105 10675 5990
+	10360 6105 10360 5990
 Wire Wire Line
-	10675 5990 10060 5990
-Text Label 10060 5990 0    50   ~ 0
+	10360 5990 9745 5990
+Text Label 9745 5990 0    50   ~ 0
 amplifier_in
 Wire Wire Line
 	11955 6105 11955 5795
@@ -1175,7 +1149,7 @@ Wire Wire Line
 Wire Wire Line
 	11280 7110 11280 7360
 NoConn ~ 12105 7360
-Text Notes 10295 6435 0    50   ~ 0
+Text Notes 9980 6435 0    50   ~ 0
 VOLUME
 Text Notes 11855 7705 0    50   ~ 0
 GAIN
@@ -1406,9 +1380,9 @@ Connection ~ 2570 10395
 Wire Wire Line
 	2570 10395 2800 10395
 Wire Wire Line
-	10825 6255 11040 6255
+	10510 6255 10625 6255
 Wire Wire Line
-	10675 6405 10675 6605
+	10360 6405 10360 6605
 Wire Wire Line
 	12560 6355 13145 6355
 Wire Wire Line
@@ -1478,70 +1452,6 @@ F 4 "-" H 2640 2875 50  0001 C CNN "MouserPN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1890 1975 1510 1975
-Text Label 1510 1975 0    50   ~ 0
-~irq
-Wire Wire Line
-	1890 2175 1510 2175
-Wire Wire Line
-	1890 2275 1510 2275
-Wire Wire Line
-	1890 2375 1510 2375
-Wire Wire Line
-	1890 2475 1510 2475
-Wire Wire Line
-	1890 2575 1510 2575
-Wire Wire Line
-	1890 2675 1510 2675
-Wire Wire Line
-	1890 2775 1510 2775
-Wire Wire Line
-	1890 2875 1510 2875
-Text Label 1510 2175 0    50   ~ 0
-c1hi
-Text Label 1510 2275 0    50   ~ 0
-c2lo
-Text Label 1510 2375 0    50   ~ 0
-c2hi
-Text Label 1510 2475 0    50   ~ 0
-~cs1
-Text Label 1510 2575 0    50   ~ 0
-~cs0
-Text Label 1510 2675 0    50   ~ 0
-~cas
-Text Label 1510 2775 0    50   ~ 0
-mux
-Text Label 1510 2875 0    50   ~ 0
-ba
-Wire Wire Line
-	1890 3775 1615 3775
-Text Label 1615 3775 0    50   ~ 0
-aec
-Wire Wire Line
-	3390 1775 3835 1775
-Wire Wire Line
-	3390 1975 3835 1975
-Wire Wire Line
-	3390 2075 3835 2075
-Text Label 3835 1775 2    50   ~ 0
-c1lo
-Text Label 3835 1975 2    50   ~ 0
-~ras
-Text Label 3835 2075 2    50   ~ 0
-phi0
-Wire Wire Line
-	3390 3775 3735 3775
-Wire Wire Line
-	3390 3875 3735 3875
-Wire Wire Line
-	3390 3975 3735 3975
-Text Label 3735 3775 2    50   ~ 0
-z
-Text Label 3735 3875 2    50   ~ 0
-aa
-Text Label 3735 3975 2    50   ~ 0
-bb
-Wire Wire Line
 	1080 9800 1080 9925
 Wire Wire Line
 	1080 10225 1080 10350
@@ -1596,13 +1506,13 @@ a9
 $Comp
 L Device:R_POT RV1
 U 1 1 64B82196
-P 10675 6255
-F 0 "RV1" H 10605 6301 50  0000 R CNN
-F 1 "10k" H 10605 6210 50  0000 R CNN
-F 2 "ReVox:Pot_Bourns_3306P" H 10675 6255 50  0001 C CNN
-F 3 "~" H 10675 6255 50  0001 C CNN
-F 4 "652-3306P-1-103" H 10675 6255 50  0001 C CNN "MouserPN"
-	1    10675 6255
+P 10360 6255
+F 0 "RV1" H 10290 6301 50  0000 R CNN
+F 1 "10k" H 10290 6210 50  0000 R CNN
+F 2 "ReVox:Pot_Bourns_3306P" H 10360 6255 50  0001 C CNN
+F 3 "~" H 10360 6255 50  0001 C CNN
+F 4 "652-3306P-1-103" H 10360 6255 50  0001 C CNN "MouserPN"
+	1    10360 6255
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1705,6 +1615,36 @@ $EndComp
 Wire Wire Line
 	11040 6255 11040 6505
 Connection ~ 11040 6255
+$Comp
+L Device:R R19
+U 1 1 65103B76
+P 10775 6255
+F 0 "R19" V 10568 6255 50  0000 C CNN
+F 1 "10k" V 10659 6255 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10705 6255 50  0001 C CNN
+F 3 "~" H 10775 6255 50  0001 C CNN
+F 4 "603-MFR-25FTF52-10K" H 10775 6255 50  0001 C CNN "MouserPN"
+F 5 "Optional, can probably use 11K to reduce different parts count" H 10775 6255 50  0001 C CNN "Notes"
+	1    10775 6255
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10925 6255 11040 6255
+Wire Wire Line
+	11040 6255 11455 6255
+NoConn ~ 1890 3775
+NoConn ~ 1890 1975
+NoConn ~ 1890 2175
+NoConn ~ 1890 2275
+NoConn ~ 1890 2375
+NoConn ~ 1890 2475
+NoConn ~ 1890 2575
+NoConn ~ 1890 2675
+NoConn ~ 1890 2775
+NoConn ~ 1890 2875
+NoConn ~ 3390 1775
+NoConn ~ 3390 1975
+NoConn ~ 3390 2075
 Wire Bus Line
 	11565 1885 11565 3425
 Wire Bus Line
@@ -1719,6 +1659,4 @@ Wire Bus Line
 	3835 2275 3835 3775
 Wire Bus Line
 	9365 1480 9365 3425
-Wire Wire Line
-	11040 6255 11455 6255
 $EndSCHEMATC
