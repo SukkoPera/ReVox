@@ -1192,27 +1192,27 @@ NoConn ~ 3390 2075
 $Comp
 L Amplifier_Operational:TLC272 U?
 U 1 1 65C5C5F8
-P 10995 6100
+P 12660 6200
 AR Path="/65BF4077/65C5C5F8" Ref="U?"  Part="1" 
 AR Path="/65C5C5F8" Ref="U3"  Part="1" 
-F 0 "U3" H 10995 5733 50  0000 C CNN
-F 1 "TLC272" H 10995 5824 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 10995 6100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 10995 6100 50  0001 C CNN
-	1    10995 6100
+F 0 "U3" H 12660 5833 50  0000 C CNN
+F 1 "TLC272" H 12660 5924 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 12660 6200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 12660 6200 50  0001 C CNN
+	1    12660 6200
 	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:TLC272 U?
 U 2 1 65C5C5FE
-P 12660 6200
+P 10995 6100
 AR Path="/65BF4077/65C5C5FE" Ref="U?"  Part="2" 
 AR Path="/65C5C5FE" Ref="U3"  Part="2" 
-F 0 "U3" H 12660 5833 50  0000 C CNN
-F 1 "TLC272" H 12660 5924 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 12660 6200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 12660 6200 50  0001 C CNN
-	2    12660 6200
+F 0 "U3" H 10995 5733 50  0000 C CNN
+F 1 "TLC272" H 10995 5824 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 10995 6100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 10995 6100 50  0001 C CNN
+	2    10995 6100
 	1    0    0    1   
 $EndComp
 Wire Wire Line
