@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReVox/ReVox.sch)
-    (date "Sun 24 Sep 2023 11:36:07 CEST")
+    (date "Sun 24 Sep 2023 22:42:39 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -342,9 +342,11 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 65C5C661))
     (comp (ref RV1)
-      (value 470k)
+      (value 500k)
       (footprint ReVox:Pot_Bourns_3306P)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 652-3306P-1-504))
       (libsource (lib Device) (part R_POT) (description Potentiometer))
       (sheetpath (names /) (tstamps /))
       (tstamp 64DBB0C8))
