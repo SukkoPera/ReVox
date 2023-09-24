@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "ReVox"
-Date "2023-09-04"
+Date "2023-09-24"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Based on work by Yeo Kheng Meng"
@@ -251,8 +251,6 @@ Text Notes 2310 1055 0    50   ~ 0
 INTERFACE TO C16
 Text Notes 1435 9020 0    50   ~ 0
 DECOUPLING & POWER
-Text Notes 9410 3715 0    50   ~ 0
-JP1 CONFIGURES ADDRESS:\n1-2 = $FD5E (SAME AS DIGIBLASTER ON SIDCARD)\n2-3 = ???
 $Comp
 L Logic_Programmable:PAL20L8 U1
 U 1 1 6380AE65
@@ -519,6 +517,7 @@ F 1 "22k" H 1825 6170 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1685 6215 50  0001 C CNN
 F 3 "~" H 1755 6215 50  0001 C CNN
 F 4 "603-MFR-25FTE52-22K" H 1755 6215 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly TWICE R3, etc. Range is 1k-100k. Use 1% or even better." H 1755 6215 50  0001 C CNN "Notes"
 	1    1755 6215
 	1    0    0    -1  
 $EndComp
@@ -536,6 +535,7 @@ F 1 "11k" V 1999 6485 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2045 6485 50  0001 C CNN
 F 3 "~" H 2115 6485 50  0001 C CNN
 F 4 "603-MFR-25FTE52-11K" H 2115 6485 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly HALF R1, etc. Range is 1k-100k. Use 1% or even better." H 2115 6485 50  0001 C CNN "Notes"
 	1    2115 6485
 	0    1    1    0   
 $EndComp
@@ -567,6 +567,7 @@ F 1 "22k" H 1825 6695 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1685 6740 50  0001 C CNN
 F 3 "~" H 1755 6740 50  0001 C CNN
 F 4 "603-MFR-25FTE52-22K" H 1755 6740 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly TWICE R3, etc. Range is 1k-100k. Use 1% or even better." H 1755 6740 50  0001 C CNN "Notes"
 	1    1755 6740
 	1    0    0    -1  
 $EndComp
@@ -579,6 +580,7 @@ F 1 "22k" H 2505 6170 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2365 6215 50  0001 C CNN
 F 3 "~" H 2435 6215 50  0001 C CNN
 F 4 "603-MFR-25FTE52-22K" H 2435 6215 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly TWICE R3, etc. Range is 1k-100k. Use 1% or even better." H 2435 6215 50  0001 C CNN "Notes"
 	1    2435 6215
 	1    0    0    -1  
 $EndComp
@@ -595,6 +597,7 @@ F 1 "11k" V 2644 6485 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2690 6485 50  0001 C CNN
 F 3 "~" H 2760 6485 50  0001 C CNN
 F 4 "603-MFR-25FTE52-11K" H 2760 6485 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly HALF R1, etc. Range is 1k-100k. Use 1% or even better." H 2760 6485 50  0001 C CNN "Notes"
 	1    2760 6485
 	0    1    1    0   
 $EndComp
@@ -614,6 +617,7 @@ F 1 "22k" H 3150 6170 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3010 6215 50  0001 C CNN
 F 3 "~" H 3080 6215 50  0001 C CNN
 F 4 "603-MFR-25FTE52-22K" H 3080 6215 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly TWICE R3, etc. Range is 1k-100k. Use 1% or even better." H 3080 6215 50  0001 C CNN "Notes"
 	1    3080 6215
 	1    0    0    -1  
 $EndComp
@@ -630,6 +634,7 @@ F 1 "11k" V 3289 6485 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3335 6485 50  0001 C CNN
 F 3 "~" H 3405 6485 50  0001 C CNN
 F 4 "603-MFR-25FTE52-11K" H 3405 6485 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly HALF R1, etc. Range is 1k-100k. Use 1% or even better." H 3405 6485 50  0001 C CNN "Notes"
 	1    3405 6485
 	0    1    1    0   
 $EndComp
@@ -649,6 +654,7 @@ F 1 "22k" H 3795 6170 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3655 6215 50  0001 C CNN
 F 3 "~" H 3725 6215 50  0001 C CNN
 F 4 "603-MFR-25FTE52-22K" H 3725 6215 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly TWICE R3, etc. Range is 1k-100k. Use 1% or even better." H 3725 6215 50  0001 C CNN "Notes"
 	1    3725 6215
 	1    0    0    -1  
 $EndComp
@@ -665,6 +671,7 @@ F 1 "11k" V 3934 6485 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3980 6485 50  0001 C CNN
 F 3 "~" H 4050 6485 50  0001 C CNN
 F 4 "603-MFR-25FTE52-11K" H 4050 6485 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly HALF R1, etc. Range is 1k-100k. Use 1% or even better." H 4050 6485 50  0001 C CNN "Notes"
 	1    4050 6485
 	0    1    1    0   
 $EndComp
@@ -684,6 +691,7 @@ F 1 "22k" H 4440 6170 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4300 6215 50  0001 C CNN
 F 3 "~" H 4370 6215 50  0001 C CNN
 F 4 "603-MFR-25FTE52-22K" H 4370 6215 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly TWICE R3, etc. Range is 1k-100k. Use 1% or even better." H 4370 6215 50  0001 C CNN "Notes"
 	1    4370 6215
 	1    0    0    -1  
 $EndComp
@@ -700,6 +708,7 @@ F 1 "11k" V 4579 6485 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4625 6485 50  0001 C CNN
 F 3 "~" H 4695 6485 50  0001 C CNN
 F 4 "603-MFR-25FTE52-11K" H 4695 6485 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly HALF R1, etc. Range is 1k-100k. Use 1% or even better." H 4695 6485 50  0001 C CNN "Notes"
 	1    4695 6485
 	0    1    1    0   
 $EndComp
@@ -719,6 +728,7 @@ F 1 "22k" H 5085 6170 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4945 6215 50  0001 C CNN
 F 3 "~" H 5015 6215 50  0001 C CNN
 F 4 "603-MFR-25FTE52-22K" H 5015 6215 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly TWICE R3, etc. Range is 1k-100k. Use 1% or even better." H 5015 6215 50  0001 C CNN "Notes"
 	1    5015 6215
 	1    0    0    -1  
 $EndComp
@@ -735,6 +745,7 @@ F 1 "11k" V 5224 6485 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5270 6485 50  0001 C CNN
 F 3 "~" H 5340 6485 50  0001 C CNN
 F 4 "603-MFR-25FTE52-11K" H 5340 6485 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly HALF R1, etc. Range is 1k-100k. Use 1% or even better." H 5340 6485 50  0001 C CNN "Notes"
 	1    5340 6485
 	0    1    1    0   
 $EndComp
@@ -754,6 +765,7 @@ F 1 "22k" H 5730 6170 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5590 6215 50  0001 C CNN
 F 3 "~" H 5660 6215 50  0001 C CNN
 F 4 "603-MFR-25FTE52-22K" H 5660 6215 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly TWICE R3, etc. Range is 1k-100k. Use 1% or even better." H 5660 6215 50  0001 C CNN "Notes"
 	1    5660 6215
 	1    0    0    -1  
 $EndComp
@@ -770,6 +782,7 @@ F 1 "11k" V 5869 6485 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5915 6485 50  0001 C CNN
 F 3 "~" H 5985 6485 50  0001 C CNN
 F 4 "603-MFR-25FTE52-11K" H 5985 6485 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly HALF R1, etc. Range is 1k-100k. Use 1% or even better." H 5985 6485 50  0001 C CNN "Notes"
 	1    5985 6485
 	0    1    1    0   
 $EndComp
@@ -789,6 +802,7 @@ F 1 "22k" H 6375 6170 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6235 6215 50  0001 C CNN
 F 3 "~" H 6305 6215 50  0001 C CNN
 F 4 "603-MFR-25FTE52-22K" H 6305 6215 50  0001 C CNN "MouserPN"
+F 5 "Exact value is not critical as long as it is exactly TWICE R3, etc. Range is 1k-100k. Use 1% or even better." H 6305 6215 50  0001 C CNN "Notes"
 	1    6305 6215
 	1    0    0    -1  
 $EndComp
@@ -840,7 +854,7 @@ F 1 "1.8n" H 6190 6790 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 6343 6595 50  0001 C CNN
 F 3 "~" H 6305 6745 50  0001 C CNN
 F 4 "810-FG28X7R1H103KNT6" H 6305 6745 50  0001 C CNN "MouserPN"
-F 5 "Optional, filters DAC output" H 6305 6745 50  0001 C CNN "Notes"
+F 5 "DAC output low-pass filter, goes to taste in the  470pF-10nF range" H 6305 6745 50  0001 C CNN "Notes"
 	1    6305 6745
 	-1   0    0    1   
 $EndComp
@@ -987,7 +1001,7 @@ L Connector:AudioJack3_SwitchTR CN2
 U 1 1 6525CFF2
 P 8395 6685
 F 0 "CN2" H 8115 6518 50  0000 R CNN
-F 1 "AUDIO_OUT" H 8115 6609 50  0000 R CNN
+F 1 "RAW_OUT" H 8115 6609 50  0000 R CNN
 F 2 "ReVox:AudioJack_SJ1-3525N" H 8395 6685 50  0001 C CNN
 F 3 "~" H 8395 6685 50  0001 C CNN
 F 4 "490-SJ1-3525N" H 8395 6685 50  0001 C CNN "MouserPN"
@@ -1151,6 +1165,8 @@ F 0 "CN4" H 7052 6674 50  0000 R CNN
 F 1 "CN_RAW_DAC" H 7052 6583 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7080 6700 50  0001 C CNN
 F 3 "~" H 7080 6700 50  0001 C CNN
+F 4 "-" H 7080 6700 50  0001 C CNN "MouserPN"
+F 5 "Mainly meant for debugging" H 7080 6700 50  0001 C CNN "Notes"
 	1    7080 6700
 	-1   0    0    -1  
 $EndComp
@@ -1199,6 +1215,7 @@ F 0 "U3" H 12660 5833 50  0000 C CNN
 F 1 "TLC272" H 12660 5924 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 12660 6200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 12660 6200 50  0001 C CNN
+F 4 "595-TLC272BIP" H 12660 6200 50  0001 C CNN "MouserPN"
 	1    12660 6200
 	1    0    0    1   
 $EndComp
@@ -1212,6 +1229,7 @@ F 0 "U3" H 10995 5733 50  0000 C CNN
 F 1 "TLC272" H 10995 5824 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 10995 6100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 10995 6100 50  0001 C CNN
+F 4 "595-TLC272BIP" H 10995 6100 50  0001 C CNN "MouserPN"
 	2    10995 6100
 	1    0    0    1   
 $EndComp
@@ -1233,6 +1251,7 @@ F 0 "C8" V 13692 6200 50  0000 C CNN
 F 1 "10u" V 13601 6200 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 13440 6200 50  0001 C CNN
 F 3 "~" H 13440 6200 50  0001 C CNN
+F 4 "710-860010572002" H 13440 6200 50  0001 C CNN "MouserPN"
 	1    13440 6200
 	0    -1   -1   0   
 $EndComp
@@ -1263,8 +1282,8 @@ Wire Notes Line
 Wire Notes Line
 	11705 6995 11705 5380
 Wire Notes Line
-	11675 5200 11675 7290
-Text Notes 10850 7265 0    50   ~ 0
+	11675 5200 11675 6995
+Text Notes 10850 6970 0    50   ~ 0
 INVERTING AMPLIFIER
 Text Notes 12425 6975 0    50   ~ 0
 INVERTING BUFFER
@@ -1300,6 +1319,7 @@ F 1 "100k" V 12539 5715 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12585 5715 50  0001 C CNN
 F 3 "~" H 12655 5715 50  0001 C CNN
 F 4 "603-MFR-25FTE52-11K" H 12655 5715 50  0001 C CNN "MouserPN"
+F 5 "1% or better" H 12655 5715 50  0001 C CNN "Notes"
 	1    12655 5715
 	0    1    1    0   
 $EndComp
@@ -1315,6 +1335,7 @@ F 1 "100k" V 12006 6100 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 11820 6100 50  0001 C CNN
 F 3 "~" H 11890 6100 50  0001 C CNN
 F 4 "603-MFR-25FTE52-11K" H 11890 6100 50  0001 C CNN "MouserPN"
+F 5 "1% or better" H 11890 6100 50  0001 C CNN "Notes"
 	1    11890 6100
 	0    -1   -1   0   
 $EndComp
@@ -1328,6 +1349,8 @@ F 0 "R20" V 10843 5520 50  0000 C CNN
 F 1 "100k" V 10934 5520 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10980 5520 50  0001 C CNN
 F 3 "~" H 11050 5520 50  0001 C CNN
+F 4 "603-MFR-25FTE52-11K" H 11050 5520 50  0001 C CNN "MouserPN"
+F 5 "1% or better" H 11050 5520 50  0001 C CNN "Notes"
 	1    11050 5520
 	0    1    1    0   
 $EndComp
@@ -1381,6 +1404,7 @@ F 0 "U3" H 3498 10111 50  0000 L CNN
 F 1 "TLC272" H 3498 10020 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3540 10065 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 3540 10065 50  0001 C CNN
+F 4 "595-TLC272BIP" H 3540 10065 50  0001 C CNN "MouserPN"
 	3    3540 10065
 	1    0    0    -1  
 $EndComp
@@ -1420,8 +1444,8 @@ F 0 "RV1" V 11375 5520 50  0000 C CNN
 F 1 "470k" V 11284 5520 50  0000 C CNN
 F 2 "ReVox:Pot_Bourns_3306P" H 11490 5520 50  0001 C CNN
 F 3 "~" H 11490 5520 50  0001 C CNN
-F 4 "652-3306P-1-103" H 11490 5520 50  0001 C CNN "MouserPN"
-F 5 "Skip if Gain control is not desired" H 11490 5520 50  0001 C CNN "Notes"
+F 4 "" H 11490 5520 50  0001 C CNN "MouserPN"
+F 5 "" H 11490 5520 50  0001 C CNN "Notes"
 	1    11490 5520
 	0    -1   1    0   
 $EndComp
@@ -1437,6 +1461,8 @@ F 0 "R19" V 10098 6000 50  0000 C CNN
 F 1 "100k" V 10189 6000 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10235 6000 50  0001 C CNN
 F 3 "~" H 10305 6000 50  0001 C CNN
+F 4 "603-MFR-25FTE52-11K" H 10305 6000 50  0001 C CNN "MouserPN"
+F 5 "1% or better" H 10305 6000 50  0001 C CNN "Notes"
 	1    10305 6000
 	0    1    1    0   
 $EndComp
@@ -1451,9 +1477,9 @@ Wire Wire Line
 	10455 6000 10610 6000
 NoConn ~ 11640 5520
 Wire Notes Line
-	9450 7290 9450 5200
+	9450 6995 9450 5195
 Wire Notes Line
-	11675 7290 9450 7290
+	11675 6995 9450 6995
 Wire Notes Line
 	9450 5200 11675 5200
 Text Label 9545 6000 0    50   ~ 0
@@ -1473,7 +1499,7 @@ AR Path="/6579482E/65C5C687" Ref="CN?"  Part="1"
 AR Path="/65C5C687" Ref="CN3"  Part="1" 
 AR Path="/65BF4077/65C5C687" Ref="CN?"  Part="1" 
 F 0 "CN3" H 14675 6233 50  0000 R CNN
-F 1 "AUDIO_OUT" H 14675 6324 50  0000 R CNN
+F 1 "AMP_OUT" H 14675 6324 50  0000 R CNN
 F 2 "ReVox:AudioJack_SJ1-3525N" H 14955 6400 50  0001 C CNN
 F 3 "~" H 14955 6400 50  0001 C CNN
 F 4 "490-SJ1-3525N" H 14955 6400 50  0001 C CNN "MouserPN"
@@ -1584,6 +1610,7 @@ F 0 "C7" H 4850 10336 50  0000 R CNN
 F 1 "10u" H 4850 10245 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4965 10290 50  0001 C CNN
 F 3 "~" H 4965 10290 50  0001 C CNN
+F 4 "710-860010572002" H 4965 10290 50  0001 C CNN "MouserPN"
 	1    4965 10290
 	-1   0    0    -1  
 $EndComp
@@ -1631,7 +1658,7 @@ AR Path="/64D8F8CD/65F0127E" Ref="R?"  Part="1"
 AR Path="/65F0127E" Ref="R23"  Part="1" 
 AR Path="/65BF4077/65F0127E" Ref="R?"  Part="1" 
 F 0 "R23" H 13675 6531 50  0000 R CNN
-F 1 "11k" H 13675 6440 50  0000 R CNN
+F 1 "10k" H 13675 6440 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 13675 6485 50  0001 C CNN
 F 3 "~" H 13745 6485 50  0001 C CNN
 F 4 "603-MFR-25FTE52-11K" H 13745 6485 50  0001 C CNN "MouserPN"
@@ -1652,20 +1679,6 @@ Wire Notes Line
 Wire Notes Line
 	6170 7210 6170 6570
 NoConn ~ 9965 2685
-Wire Bus Line
-	11565 1885 11565 3425
-Wire Bus Line
-	1055 5840 6205 5840
-Wire Bus Line
-	12985 1850 12985 2550
-Wire Bus Line
-	14940 1850 14940 2550
-Wire Bus Line
-	9365 1480 9365 3425
-Wire Bus Line
-	1515 3075 1515 3775
-Wire Bus Line
-	3835 2275 3835 3775
 $Comp
 L Jumper:Jumper_3_Open JP?
 U 1 1 65C5C692
@@ -1676,7 +1689,22 @@ F 0 "JP1" H 13425 5221 50  0000 C CNN
 F 1 "JMP_AUDIO_SRC" H 13425 5312 50  0000 C CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13425 5090 50  0001 C CNN
 F 3 "~" H 13425 5090 50  0001 C CNN
+F 4 "-" H 13425 5090 50  0001 C CNN "MouserPN"
 	1    13425 5090
 	-1   0    0    1   
 $EndComp
+Wire Bus Line
+	11565 1885 11565 3425
+Wire Bus Line
+	1515 3075 1515 3775
+Wire Bus Line
+	14940 1850 14940 2550
+Wire Bus Line
+	12985 1850 12985 2550
+Wire Bus Line
+	1055 5840 6205 5840
+Wire Bus Line
+	3835 2275 3835 3775
+Wire Bus Line
+	9365 1480 9365 3425
 $EndSCHEMATC
