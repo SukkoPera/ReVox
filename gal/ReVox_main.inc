@@ -34,19 +34,19 @@ Pin 8 = a6;
 Pin 9 = a4;
 Pin 10 = a2;
 Pin 11 = a0;
-Pin 15 = a1;
-Pin 16 = a3;
-Pin 17 = a5;
-Pin 18 = a7;
-Pin 19 = a9;
+Pin 16 = a1;
+Pin 17 = a3;
+Pin 18 = a5;
+Pin 19 = a7;
+Pin 20 = a9;
 
 Pin 14 = phi2;
-Pin 22 = rw;
+Pin 21 = rw;
 Pin 23 = reset;				// Active-low
 
 /** Outputs **/
-Pin 20 = clock;				// 74x273 clock, data is sampled on rising edge
-Pin 21 = clear;				// 74x273 clear, active-low
+Pin 15 = clock;				// 74x273 clock, data is sampled on rising edge
+Pin 22 = clear;				// 74x273 clear, active-low
 
 /** Declarations and Intermediate Variable Definitions **/
 Field addr = [a15..0];

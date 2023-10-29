@@ -1,0 +1,320 @@
+/* ReVox Simulation Input
+ * Copyright 2022 SukkoPera <software@sukkology.net>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+Name ReVox_GAL20;
+Partno TBD;
+Date 20/08/2023;
+Revision 01;
+Designer SukkoPera;
+Company OpenRetroWorks;
+Assembly None;
+Location Italy;
+Device g20v8ma;
+
+ORDER: reset, addr, rw, phi2,   clock, clear;
+
+VECTORS:
+/* Reset */
+0 '0000' 1 0 H L
+0 '0000' 1 1 H L
+1 '0000' 1 0 H H
+1 '0000' 1 1 H H
+
+/* Bad addresses */
+1 '0000' 0 0 H H
+1 '0001' 0 1 H H
+1 '0002' 0 0 H H
+1 '0003' 0 1 H H
+1 '0000' 1 0 H H
+1 '0001' 1 1 H H
+1 '0002' 1 0 H H
+1 '0003' 1 1 H H
+
+/* Right addresses, but no phi2 */
+1 'FD40' 0 0 H H
+1 'FD41' 0 0 H H
+1 'FD42' 0 0 H H
+1 'FD43' 0 0 H H
+1 'FD44' 0 0 H H
+1 'FD45' 0 0 H H
+1 'FD46' 0 0 H H
+1 'FD47' 0 0 H H
+1 'FD48' 0 0 H H
+1 'FD49' 0 0 H H
+1 'FD4A' 0 0 H H
+1 'FD4B' 0 0 H H
+1 'FD4C' 0 0 H H
+1 'FD4D' 0 0 H H
+1 'FD4E' 0 0 H H
+1 'FD4F' 0 0 H H
+1 'FD50' 0 0 H H
+1 'FD51' 0 0 H H
+1 'FD52' 0 0 H H
+1 'FD53' 0 0 H H
+1 'FD54' 0 0 H H
+1 'FD55' 0 0 H H
+1 'FD56' 0 0 H H
+1 'FD57' 0 0 H H
+1 'FD58' 0 0 H H
+1 'FD59' 0 0 H H
+1 'FD5A' 0 0 H H
+1 'FD5B' 0 0 H H
+1 'FD5C' 0 0 H H
+1 'FD5D' 0 0 H H
+1 'FD5E' 0 0 H H
+1 'FD5F' 0 0 H H
+
+1 'FD40' 1 0 H H
+1 'FD41' 1 0 H H
+1 'FD42' 1 0 H H
+1 'FD43' 1 0 H H
+1 'FD44' 1 0 H H
+1 'FD45' 1 0 H H
+1 'FD46' 1 0 H H
+1 'FD47' 1 0 H H
+1 'FD48' 1 0 H H
+1 'FD49' 1 0 H H
+1 'FD4A' 1 0 H H
+1 'FD4B' 1 0 H H
+1 'FD4C' 1 0 H H
+1 'FD4D' 1 0 H H
+1 'FD4E' 1 0 H H
+1 'FD4F' 1 0 H H
+1 'FD50' 1 0 H H
+1 'FD51' 1 0 H H
+1 'FD52' 1 0 H H
+1 'FD53' 1 0 H H
+1 'FD54' 1 0 H H
+1 'FD55' 1 0 H H
+1 'FD56' 1 0 H H
+1 'FD57' 1 0 H H
+1 'FD58' 1 0 H H
+1 'FD59' 1 0 H H
+1 'FD5A' 1 0 H H
+1 'FD5B' 1 0 H H
+1 'FD5C' 1 0 H H
+1 'FD5D' 1 0 H H
+1 'FD5E' 1 0 H H
+1 'FD5F' 1 0 H H
+
+1 'FE80' 0 0 H H
+1 'FE81' 0 0 H H
+1 'FE82' 0 0 H H
+1 'FE83' 0 0 H H
+1 'FE84' 0 0 H H
+1 'FE85' 0 0 H H
+1 'FE86' 0 0 H H
+1 'FE87' 0 0 H H
+1 'FE88' 0 0 H H
+1 'FE89' 0 0 H H
+1 'FE8A' 0 0 H H
+1 'FE8B' 0 0 H H
+1 'FE8C' 0 0 H H
+1 'FE8D' 0 0 H H
+1 'FE8E' 0 0 H H
+1 'FE8F' 0 0 H H
+1 'FE90' 0 0 H H
+1 'FE91' 0 0 H H
+1 'FE92' 0 0 H H
+1 'FE93' 0 0 H H
+1 'FE94' 0 0 H H
+1 'FE95' 0 0 H H
+1 'FE96' 0 0 H H
+1 'FE97' 0 0 H H
+1 'FE98' 0 0 H H
+1 'FE99' 0 0 H H
+1 'FE9A' 0 0 H H
+1 'FE9B' 0 0 H H
+1 'FE9C' 0 0 H H
+1 'FE9D' 0 0 H H
+1 'FE9E' 0 0 H H
+1 'FE9F' 0 0 H H
+
+1 'FE80' 1 0 H H
+1 'FE81' 1 0 H H
+1 'FE82' 1 0 H H
+1 'FE83' 1 0 H H
+1 'FE84' 1 0 H H
+1 'FE85' 1 0 H H
+1 'FE86' 1 0 H H
+1 'FE87' 1 0 H H
+1 'FE88' 1 0 H H
+1 'FE89' 1 0 H H
+1 'FE8A' 1 0 H H
+1 'FE8B' 1 0 H H
+1 'FE8C' 1 0 H H
+1 'FE8D' 1 0 H H
+1 'FE8E' 1 0 H H
+1 'FE8F' 1 0 H H
+1 'FE90' 1 0 H H
+1 'FE91' 1 0 H H
+1 'FE92' 1 0 H H
+1 'FE93' 1 0 H H
+1 'FE94' 1 0 H H
+1 'FE95' 1 0 H H
+1 'FE96' 1 0 H H
+1 'FE97' 1 0 H H
+1 'FE98' 1 0 H H
+1 'FE99' 1 0 H H
+1 'FE9A' 1 0 H H
+1 'FE9B' 1 0 H H
+1 'FE9C' 1 0 H H
+1 'FE9D' 1 0 H H
+1 'FE9E' 1 0 H H
+1 'FE9F' 1 0 H H
+
+/* Raise phi2 but READ */
+1 'FD40' 1 1 H H
+1 'FD41' 1 1 H H
+1 'FD42' 1 1 H H
+1 'FD43' 1 1 H H
+1 'FD44' 1 1 H H
+1 'FD45' 1 1 H H
+1 'FD46' 1 1 H H
+1 'FD47' 1 1 H H
+1 'FD48' 1 1 H H
+1 'FD49' 1 1 H H
+1 'FD4A' 1 1 H H
+1 'FD4B' 1 1 H H
+1 'FD4C' 1 1 H H
+1 'FD4D' 1 1 H H
+1 'FD4E' 1 1 H H
+1 'FD4F' 1 1 H H
+1 'FD50' 1 1 H H
+1 'FD51' 1 1 H H
+1 'FD52' 1 1 H H
+1 'FD53' 1 1 H H
+1 'FD54' 1 1 H H
+1 'FD55' 1 1 H H
+1 'FD56' 1 1 H H
+1 'FD57' 1 1 H H
+1 'FD58' 1 1 H H
+1 'FD59' 1 1 H H
+1 'FD5A' 1 1 H H
+1 'FD5B' 1 1 H H
+1 'FD5C' 1 1 H H
+1 'FD5D' 1 1 H H
+1 'FD5E' 1 1 H H
+1 'FD5F' 1 1 H H
+
+1 'FE80' 1 1 H H
+1 'FE81' 1 1 H H
+1 'FE82' 1 1 H H
+1 'FE83' 1 1 H H
+1 'FE84' 1 1 H H
+1 'FE85' 1 1 H H
+1 'FE86' 1 1 H H
+1 'FE87' 1 1 H H
+1 'FE88' 1 1 H H
+1 'FE89' 1 1 H H
+1 'FE8A' 1 1 H H
+1 'FE8B' 1 1 H H
+1 'FE8C' 1 1 H H
+1 'FE8D' 1 1 H H
+1 'FE8E' 1 1 H H
+1 'FE8F' 1 1 H H
+1 'FE90' 1 1 H H
+1 'FE91' 1 1 H H
+1 'FE92' 1 1 H H
+1 'FE93' 1 1 H H
+1 'FE94' 1 1 H H
+1 'FE95' 1 1 H H
+1 'FE96' 1 1 H H
+1 'FE97' 1 1 H H
+1 'FE98' 1 1 H H
+1 'FE99' 1 1 H H
+1 'FE9A' 1 1 H H
+1 'FE9B' 1 1 H H
+1 'FE9C' 1 1 H H
+1 'FE9D' 1 1 H H
+1 'FE9E' 1 1 H H
+1 'FE9F' 1 1 H H
+
+/* Raise phi2 and WRITE */
+1 'FD40' 0 1 H H
+1 'FD41' 0 1 H H
+1 'FD42' 0 1 H H
+1 'FD43' 0 1 H H
+1 'FD44' 0 1 H H
+1 'FD45' 0 1 H H
+1 'FD46' 0 1 H H
+1 'FD47' 0 1 H H
+1 'FD48' 0 1 H H
+1 'FD49' 0 1 H H
+1 'FD4A' 0 1 H H
+1 'FD4B' 0 1 H H
+1 'FD4C' 0 1 H H
+1 'FD4D' 0 1 H H
+1 'FD4E' 0 1 H H
+1 'FD4F' 0 1 H H
+1 'FD50' 0 1 H H
+1 'FD51' 0 1 H H
+1 'FD52' 0 1 H H
+1 'FD53' 0 1 H H
+1 'FD54' 0 1 H H
+1 'FD55' 0 1 H H
+1 'FD56' 0 1 H H
+1 'FD57' 0 1 H H
+1 'FD58' 0 1 H H
+1 'FD59' 0 1 H H
+1 'FD5A' 0 1 H H
+1 'FD5B' 0 1 H H
+1 'FD5C' 0 1 H H
+1 'FD5D' 0 1 H H
+1 'FD5E' 0 1 L H /* Yo! */
+1 'FD5F' 0 1 H H
+
+1 'FE80' 0 1 H H
+1 'FE81' 0 1 H H
+1 'FE82' 0 1 H H
+1 'FE83' 0 1 H H
+1 'FE84' 0 1 H H
+1 'FE85' 0 1 H H
+1 'FE86' 0 1 H H
+1 'FE87' 0 1 H H
+1 'FE88' 0 1 H H
+1 'FE89' 0 1 H H
+1 'FE8A' 0 1 H H
+1 'FE8B' 0 1 H H
+1 'FE8C' 0 1 H H
+1 'FE8D' 0 1 H H
+1 'FE8E' 0 1 H H
+1 'FE8F' 0 1 H H
+1 'FE90' 0 1 H H
+1 'FE91' 0 1 H H
+1 'FE92' 0 1 H H
+1 'FE93' 0 1 H H
+1 'FE94' 0 1 H H
+1 'FE95' 0 1 H H
+1 'FE96' 0 1 H H
+1 'FE97' 0 1 H H
+1 'FE98' 0 1 H H
+1 'FE99' 0 1 H H
+1 'FE9A' 0 1 H H
+1 'FE9B' 0 1 H H
+1 'FE9C' 0 1 H H
+1 'FE9D' 0 1 H H
+1 'FE9E' 0 1 L H /* Yo! */
+1 'FE9F' 0 1 H H
+
+/* Simulate a 6502 write cycle */
+1 '0000' 1 0 H H	/* Start with some other address on the bus */
+1 'FD5E' 1 0 H H	/* Put our address on the bus */
+1 'FD5E' 0 0 H H    /* R/W goes low, write cycle beginning */
+1 'FD5E' 0 1 L H	/* PHI2 does high => Output clock goes low */
+/* CPU puts data on bus */
+1 'FD5E' 0 0 H H	/* PHI2 goes high, data is valid => Output clock goes high and rising edge causes data to be sampled */
+1 'FD5E' 1 0 H H	/* R/W goes high, write cycle ends */

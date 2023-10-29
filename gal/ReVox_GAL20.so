@@ -1,9 +1,9 @@
 CSIM(WM): CUPL Simulation Program
 Version 5.0a Serial# 
 Copyright (c) 1983, 1998 Logical Devices, Inc.
-CREATED Sun Oct 29 12:12:01 2023
+CREATED Sun Oct 29 12:39:59 2023
 
-LISTING FOR SIMULATION FILE: REVOX_GAL22.si
+LISTING FOR SIMULATION FILE: REVOX_GAL20.si
 
    1: /* ReVox Simulation Input
    2:  * Copyright 2022 SukkoPera <software@sukkology.net>
@@ -21,15 +21,15 @@ LISTING FOR SIMULATION FILE: REVOX_GAL22.si
   14:  * You should have received a copy of the GNU General Public License
   15:  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
   16:  */
-  17: Name     ReVox_GAL22;
-  18: PartNo   TBD;
-  19: Date     20/08/2023;
+  17: Name ReVox_GAL20;
+  18: Partno TBD;
+  19: Date 20/08/2023;
   20: Revision 01;
   21: Designer SukkoPera;
-  22: Company  OpenRetroWorks;
+  22: Company OpenRetroWorks;
   23: Assembly None;
   24: Location Italy;
-  25: Device   g22v10;
+  25: Device g20v8ma;
   26: 
   27: FIELD addr = [a15,a14,a13,a12,a11,a10,a9,a8,a7,a6,a5,a4,a3,a2,a1,a0];
   28:
