@@ -29,6 +29,9 @@ Unfortunately, the amplifier seems to start oscillating when something is connec
 
 Since the project is open source, I hope someone will be able to fix that, even though it's not really necessary (IMHO that jack could be removed altogether).
 
+## Testing
+I suggest to use [WavePlay-SD](https://plus4world.powweb.com/software/WavePlay-SD), a great piece of software that plays music with super quality. Enter the Setup menu with <kbd>CTRL+S</kbd> and select *INT. INTL DGB:0* using the *MOD* button.
+
 ## License
 The ReVox documentation, including the design itself, is copyright &copy; SukkoPera 2023 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
