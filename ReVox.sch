@@ -1612,7 +1612,7 @@ F 4 "710-860010572002" H 4965 10290 50  0001 C CNN "MouserPN"
 	1    4965 10290
 	-1   0    0    -1  
 $EndComp
-Text Notes 5345 10395 0    50   ~ 0
+Text Notes 4785 10825 0    50   ~ 0
 LOW-PASS FILTER\n(Consider Thevenin equivalent)\nFcut = 12 Hz
 $Comp
 L power:VCOM #PWR?
@@ -1701,6 +1701,12 @@ Wire Notes Line
 	13975 6995 13215 6995
 Wire Notes Line
 	13215 6995 13215 5800
+Text Notes 13225 7290 0    50   ~ 0
+HIGH-PASS FILTER\n\nFcut ~~= 16 Hz
+Text Notes 14785 5880 0    50   ~ 0
+- WARNING -\nAMPLIFIER SEEMS TO\nOSCILLATE WHEN\nTHIS JACK IS USED
+Text Notes 5125 10120 0    50   ~ 0
+This is the bias voltage for the opamp.\nIt is set at +2V because the TLC272\nswings between 0 and 4V. If using a\nrail-to-rail opamp (like the LMC6482,\nfor instance), this can be set at 2.5V\nby using the same value for R17 and\nR18 (hint: 11k works fine if already\nused for the resistor ladder).
 Wire Bus Line
 	11565 1885 11565 3425
 Wire Bus Line
@@ -1715,6 +1721,4 @@ Wire Bus Line
 	3835 2275 3835 3775
 Wire Bus Line
 	9365 1480 9365 3425
-Text Notes 13225 7290 0    50   ~ 0
-HIGH-PASS FILTER\n\nFcut ~~= 16 Hz
 $EndSCHEMATC
