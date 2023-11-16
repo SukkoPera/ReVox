@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "ReVox"
-Date "2023-10-29"
+Date "2023-11-17"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Based on work by Yeo Kheng Meng"
@@ -1358,42 +1358,10 @@ Wire Wire Line
 	13425 4940 13425 4860
 Text Label 13920 4860 2    50   ~ 0
 ext_audio
-Text Label 13745 6200 0    50   ~ 0
+Text Label 13745 6200 1    50   ~ 0
 amplified_audio
 Wire Wire Line
-	14640 6500 14640 6785
-Wire Wire Line
-	14640 6400 14640 6200
-$Comp
-L power:GND #PWR?
-U 1 1 65C5C679
-P 14640 6785
-AR Path="/6579482E/65C5C679" Ref="#PWR?"  Part="1" 
-AR Path="/65C5C679" Ref="#PWR0102"  Part="1" 
-AR Path="/65BF4077/65C5C679" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0102" H 14640 6535 50  0001 C CNN
-F 1 "GND" H 14645 6612 50  0000 C CNN
-F 2 "" H 14640 6785 50  0001 C CNN
-F 3 "" H 14640 6785 50  0001 C CNN
-	1    14640 6785
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	14755 6500 14640 6500
-Wire Wire Line
-	14755 6400 14640 6400
-Connection ~ 14640 6200
-Wire Wire Line
-	14640 6200 14755 6200
-NoConn ~ 14755 6300
-Wire Wire Line
-	14755 6100 14640 6100
-Text Notes 14335 7255 0    50   ~ 0
-AUDIO IS OUTPUT TO EXT_AUDIO,\nUNLESS A JACK IS INSERTED
-Wire Wire Line
-	13675 5090 14640 5090
-Wire Wire Line
-	14640 5090 14640 6100
+	13675 5090 13745 5090
 $Comp
 L Amplifier_Operational:TLC272 U3
 U 3 1 65C86123
@@ -1489,22 +1457,6 @@ Wire Wire Line
 Connection ~ 10045 6000
 Wire Wire Line
 	10045 6000 10155 6000
-$Comp
-L Connector:AudioJack3_SwitchTR CN?
-U 1 1 65C5C687
-P 14955 6400
-AR Path="/6579482E/65C5C687" Ref="CN?"  Part="1" 
-AR Path="/65C5C687" Ref="CN3"  Part="1" 
-AR Path="/65BF4077/65C5C687" Ref="CN?"  Part="1" 
-F 0 "CN3" H 14675 6233 50  0000 R CNN
-F 1 "AMP_OUT" H 14675 6324 50  0000 R CNN
-F 2 "ReVox:AudioJack_SJ1-3525N" H 14955 6400 50  0001 C CNN
-F 3 "~" H 14955 6400 50  0001 C CNN
-F 4 "490-SJ1-3525N" H 14955 6400 50  0001 C CNN "MouserPN"
-F 5 "AUDIO_OUT" H 14955 6400 50  0001 C CNN "Value"
-	1    14955 6400
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	8080 6385 8080 6000
 Wire Wire Line
@@ -1663,8 +1615,6 @@ F 4 "603-MFR-25FTE52-11K" H 13745 6485 50  0001 C CNN "MouserPN"
 	1    13745 6485
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13745 6200 14640 6200
 Connection ~ 13745 6200
 Text Notes 6095 8085 2    50   ~ 0
 LOW-PASS FILTER THAT MAKES\nTHE OUTPUT SIGNAL LESS\n"STEPPED" AND SMOOTHER.\n\nI AM UNABLE TO CALCULATE THE\nCUT FREQUENCY OF THIS, SO I JUST\nCHOSE THE VALUE "BY EAR". BUT IF\nI UNDERSTAND CORRECTLY, THE\nOUTPUT IMPEDANCE OF AN R-2R\nNETWORK IS JUST R, SO WITH R=11k\nAND C5 = 1.8n, Fcut ~~= 8 kHz.\n680p AND 820p WOULD SET IT AT\n21277 AND 17644 Hz RESPECTIVELY.\n\nYMMV, SO FEEL FREE TO TEST OTHER\nVALUES, LET'S SAY IN THE 470pF-10nF\nRANGE OR THEREABOUTS.\n\n
@@ -1703,10 +1653,10 @@ Wire Notes Line
 	13215 6995 13215 5800
 Text Notes 13225 7290 0    50   ~ 0
 HIGH-PASS FILTER\n\nFcut ~~= 16 Hz
-Text Notes 14785 5880 0    50   ~ 0
-- WARNING -\nAMPLIFIER SEEMS TO\nOSCILLATE WHEN\nTHIS JACK IS USED
 Text Notes 5125 10120 0    50   ~ 0
 This is the bias voltage for the opamp.\nIt is set at +2V because the TLC272\nswings between 0 and 4V. If using a\nrail-to-rail opamp (like the LMC6482,\nfor instance), this can be set at 2.5V\nby using the same value for R17 and\nR18 (hint: 11k works fine if already\nused for the resistor ladder).
+Wire Wire Line
+	13745 6200 13745 5090
 Wire Bus Line
 	11565 1885 11565 3425
 Wire Bus Line
