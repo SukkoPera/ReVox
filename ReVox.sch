@@ -807,8 +807,6 @@ $EndComp
 Wire Wire Line
 	6305 6365 6305 6485
 Wire Wire Line
-	6305 6485 6750 6485
-Wire Wire Line
 	6305 6065 6305 5940
 Entry Wire Line
 	6205 5840 6305 5940
@@ -832,10 +830,10 @@ b6
 Text Label 6305 5940 0    50   ~ 0
 b7
 $Comp
-L Device:C C6
+L Device:C C4
 U 1 1 64B44D19
 P 7305 6485
-F 0 "C6" V 7053 6485 50  0000 C CNN
+F 0 "C4" V 7053 6485 50  0000 C CNN
 F 1 "100n" V 7144 6485 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 7343 6335 50  0001 C CNN
 F 3 "~" H 7305 6485 50  0001 C CNN
@@ -844,10 +842,10 @@ F 4 "810-FG28X7R1H104KNT0" H 7305 6485 50  0001 C CNN "MouserPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C5
+L Device:C C3
 U 1 1 64B457A8
 P 6305 6745
-F 0 "C5" H 6190 6699 50  0000 R CNN
+F 0 "C3" H 6190 6699 50  0000 R CNN
 F 1 "1.8n" H 6190 6790 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 6343 6595 50  0001 C CNN
 F 3 "~" H 6305 6745 50  0001 C CNN
@@ -876,10 +874,10 @@ Wire Wire Line
 Text Label 8080 6485 2    50   ~ 0
 analog_audio
 $Comp
-L Device:C C4
+L Device:C C7
 U 1 1 64B83085
 P 2800 10080
-F 0 "C4" H 2915 10126 50  0000 L CNN
+F 0 "C7" H 2915 10126 50  0000 L CNN
 F 1 "100n" H 2915 10035 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 2838 9930 50  0001 C CNN
 F 3 "~" H 2800 10080 50  0001 C CNN
@@ -894,10 +892,10 @@ Wire Wire Line
 Wire Wire Line
 	2350 9930 2350 9730
 $Comp
-L Device:CP1 C3
+L Device:CP1 C6
 U 1 1 64C59A52
 P 2350 10080
-F 0 "C3" H 2235 10126 50  0000 R CNN
+F 0 "C6" H 2235 10126 50  0000 R CNN
 F 1 "100u" H 2235 10035 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2350 10080 50  0001 C CNN
 F 3 "~" H 2350 10080 50  0001 C CNN
@@ -1155,41 +1153,6 @@ Text Label 11465 1585 2    50   ~ 0
 latch_clear
 Entry Wire Line
 	11465 1885 11565 1985
-$Comp
-L Connector:Conn_01x02_Male CN4
-U 1 1 64EEFAB7
-P 7080 6700
-F 0 "CN4" H 7052 6674 50  0000 R CNN
-F 1 "CN_RAW_DAC" H 7052 6583 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7080 6700 50  0001 C CNN
-F 3 "~" H 7080 6700 50  0001 C CNN
-F 4 "-" H 7080 6700 50  0001 C CNN "MouserPN"
-F 5 "Mainly meant for debugging" H 7080 6700 50  0001 C CNN "Notes"
-	1    7080 6700
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 6485 6750 6700
-Wire Wire Line
-	6750 6700 6880 6700
-Connection ~ 6750 6485
-Wire Wire Line
-	6750 6485 7155 6485
-Wire Wire Line
-	6880 6800 6750 6800
-$Comp
-L power:GND #PWR012
-U 1 1 64F42E40
-P 6750 6970
-F 0 "#PWR012" H 6750 6720 50  0001 C CNN
-F 1 "GND" H 6755 6797 50  0000 C CNN
-F 2 "" H 6750 6970 50  0001 C CNN
-F 3 "" H 6750 6970 50  0001 C CNN
-	1    6750 6970
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 6800 6750 6970
 NoConn ~ 1890 3775
 NoConn ~ 1890 1975
 NoConn ~ 1890 2175
@@ -1243,9 +1206,9 @@ L Device:CP1 C?
 U 1 1 65C5C61C
 P 13440 6200
 AR Path="/6579482E/65C5C61C" Ref="C?"  Part="1" 
-AR Path="/65C5C61C" Ref="C8"  Part="1" 
+AR Path="/65C5C61C" Ref="C5"  Part="1" 
 AR Path="/65BF4077/65C5C61C" Ref="C?"  Part="1" 
-F 0 "C8" V 13692 6200 50  0000 C CNN
+F 0 "C5" V 13692 6200 50  0000 C CNN
 F 1 "1u" V 13601 6200 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 13440 6200 50  0001 C CNN
 F 3 "~" H 13440 6200 50  0001 C CNN
@@ -1554,9 +1517,9 @@ L Device:CP1 C?
 U 1 1 65EB8AE6
 P 4965 10290
 AR Path="/6579482E/65EB8AE6" Ref="C?"  Part="1" 
-AR Path="/65EB8AE6" Ref="C7"  Part="1" 
+AR Path="/65EB8AE6" Ref="C8"  Part="1" 
 AR Path="/65E4CD03/65EB8AE6" Ref="C?"  Part="1" 
-F 0 "C7" H 4850 10336 50  0000 R CNN
+F 0 "C8" H 4850 10336 50  0000 R CNN
 F 1 "10u" H 4850 10245 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4965 10290 50  0001 C CNN
 F 3 "~" H 4965 10290 50  0001 C CNN
@@ -1657,6 +1620,8 @@ Text Notes 5125 10120 0    50   ~ 0
 This is the bias voltage for the opamp.\nIt is set at +2V because the TLC272\nswings between 0 and 4V. If using a\nrail-to-rail opamp (like the LMC6482,\nfor instance), this can be set at 2.5V\nby using the same value for R17 and\nR18 (hint: 11k works fine if already\nused for the resistor ladder).
 Wire Wire Line
 	13745 6200 13745 5090
+Wire Wire Line
+	6305 6485 7155 6485
 Wire Bus Line
 	11565 1885 11565 3425
 Wire Bus Line
